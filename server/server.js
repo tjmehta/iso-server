@@ -1,5 +1,5 @@
 var express = require('express');
-var makeQueryRequest = require('make-query-request');
+var makeRequest = require('make-request');
 var app = express();
 
 app.use(function (req, res, next) {
@@ -14,7 +14,14 @@ app.get('/', function (req, res, next) {
 app.use('/client', express.static('client'));
 
 app.get('/server', function (req, res, next) {
-  makeQueryRequest(req, res);
+  makeRequest(req.query || {}, function (err, bodyStr) {
+    if (err) {
+      res.send('ERROR: '+err.message);
+    }
+    else {
+      res.send(bodyStr);
+    }
+  });
 });
 
 app.post('/query', function (req, res, next) {
@@ -25,4 +32,4 @@ app.post('/query', function (req, res, next) {
   });
 });
 
-app.listen(3030);
+app.listen(process.env.PORT || 3030);
