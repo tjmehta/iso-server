@@ -1,6 +1,6 @@
 # isomorphic-http-server
 
 
-##/client?url=url
+###/client?url=url
 
-##/server?url=url
+###/server?url=url
