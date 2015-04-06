@@ -1,2 +1,6 @@
 # isomorphic-http-server
-test
+
+
+##/client?url=url
+
+##/server?url=url
