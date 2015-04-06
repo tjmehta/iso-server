@@ -1,2 +1,2 @@
-# test-http-server
+# isomorphic-http-server
 test
