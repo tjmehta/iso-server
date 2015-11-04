@@ -1,4 +1,4 @@
-# isomorphic-http-server
+# isomorphic-http-proxy
 
 ##client-side
 ###/client?url=url
