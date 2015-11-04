@@ -1,4 +1,4 @@
-# isomorphic-http-proxy
+# isomorphic-http-proxy for testing
 
 ##client-side
 ###/client?url=url
