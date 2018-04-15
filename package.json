@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "101": "^1.6.2",
+    "101": "^1.6.3",
     "express": "^4.12.3",
     "superagent": "^3.3.1"
   },
